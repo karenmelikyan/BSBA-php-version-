@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{background:#f1f1f1;font-family: 'Open Sans', sans-serif; }
+header{
+    display:blocK;
+    width:500px;
+    color:#313131;
+    margin:20px auto;
+    text-align:center;
+    font-size:.8em;
+}
+.ba-Slider{
+    position:relative;
+    display:block;
+    
+    background:#212121;
+    border:1px solid white;
+    margin:20px auto;
+    overflow:hidden;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select:none; 
+    user-select:none;
+}
+.slider{
+    position:absolute;
+    top:calc(50% - 16px);
+    left: calc(50% - 16px);
+    background: transparent url(https://i.imgur.com/ImtbhIo.png);
+    width:32px;
+    height:32px;
+    cursor:pointer;
+}
+#before{
+    position:absolute;top:0;left:0;
+    width:50%;
+    overflow:hidden;
+    
+}
+.ease{
+    transition:width ease .5s,left ease .5s;
+    -moz-transition:width ease .5s,left ease .5s;
+    -webkit-transition:width ease .5s,left ease .5s;
+}
+#before:after{
+   
+}
+
+
+
+
+body {
+	padding: 0 10px;
+}
+
+.div_all h1 {
+	text-align: center;
+}
+
+.div_form >form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.div_form {
+	width: 900px;
+}
+
+.div_label {
+    align-self: flex-end;
+}
+
+.div_label > label {
+	font-weight: bold;
+	display: block;
+}
+
+.div_label > input {
+	margin-top: 10px;
+}
+
+.table {
+	margin-top: 20px;
+}
+
+#customers {
+	  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+}
+
+#customers td, #customers th {
+	  border: 1px solid #ddd;
+	  padding: 8px;
+	  text-align: center;
+	  vertical-align: middle;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+	  padding-top: 12px;
+	  padding-bottom: 12px;
+	  text-align: left;
+	  background-color: #4CAF50;
+	  color: white;
+}
+
+#customers button {
+	background: unset;
+	border: 0;
+}
+
+#customers button i , #customers a i {
+	font-size: 23px;
+}
+
+#customers img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.button_edit {
+	color: green;
+}
+
+.button_delete {
+	color: red;
+}
+
+.item_form {
+	margin-bottom: 10px;
+}
+
+.item_form label {
+	font-weight: bold;
+	display: block;
+}
+
+
+@media screen and (max-width: 950px) {
+	.div_form {
+		width: 100%;
+	}
+
+	.div_form form {
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 650px) {
+	.table {
+		overflow-x:auto;
+	}
+
+	#customers {
+		overflow-x:scroll;
+	  	border-collapse: collapse;
+	  	border-spacing: 0;
+	  	width: 100%;
+	}
+
+}
+
+#BSBA-plugin{
+	max-width: 100%;
+}
+
+#BSBA-plugin img{
+	max-width: unset;
+}
+
+
+#BSBA-plugin .slider_all {
+	display: grid;
+	grid-template-columns: repeat(2 , 1fr);
+	grid-gap: 40px;
+	padding: 0 20px;
+}
+
+#BSBA-plugin .slider_all>div {
+	width: 100% !important;
+}
+
+@media screen and (max-width: 850px) {
+	#BSBA-plugin .slider_all>div {
+		height: 350px !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#BSBA-plugin .slider_all {
+		grid-template-columns: repeat(1 , 1fr);
+		grid-gap: 20px;
+	}
+}
